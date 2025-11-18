@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PayTrack for Students</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>PayTrack for Students</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <a href="/home">Home</a>
+        <a href="/set-budget">Set Budget</a>
+        <a href="/add">Add Expense</a>
+        <a class="active">Dashboard</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <h2 class="section-title">Monthly Overview</h2>
+
+        <div class="chart-section">
+            <div class="chart-box">
+                <div class="chart-circle">Chart Placeholder</div>
+            </div>
+
+            <div class="expense-summary">
+                <p>Food: ${{ totals.food }}</p>
+                <p>Transport: ${{ totals.transport }}</p>
+                <p>Entertainment: ${{ totals.entertainment }}</p>
+            </div>
+        </div>
+
+        <!-- Budget bar -->
+        <div class="budget-section">
+            <p class="budget-title">Budget progress bar</p>
+            <div class="budget-bar">
+                <div class="budget-fill" style="width: {{ totals.percent }}%"></div>
+            </div>
+            <p>Budget used: {{ totals.percent }}%</p>
+        </div>
+
+    </div>
+
+    <!-- Footer Tip -->
+    <div class="footer-tip">
+        Tip of the day: Try cooking instead of ordering food!
+    </div>
+
+</body>
+</html>

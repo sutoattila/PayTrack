@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PayTrack - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>PayTrack for Students</h1>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <a class="active" href="/home">Home</a>
+        <a href="/add">Add Expense</a>
+        <a href="/">Dashboard</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2 class="section-title">Welcome</h2>
+
+        <p style="font-size:18px; margin-top:20px;">
+            Welcome to PayTrack for Students!  
+            Use the navigation bar above to manage your expenses and view insights.
+        </p>
+    </div>
+
+    <!-- Footer Tip -->
+    <div class="footer-tip">
+        Tip of the day: Try cooking instead of ordering food!
+    </div>
+
+</body>
+</html>

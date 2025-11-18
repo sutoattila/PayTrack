@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e3f4fc;
+}
+
+/* Header */
+.header {
+    background-color: #2d9a94;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 22px;
+}
+
+/* Navigation */
+.nav {
+    background-color: #236b65;
+    padding: 12px;
+    text-align: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav a.active {
+    text-decoration: underline;
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    padding: 40px;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Chart area */
+.chart-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.chart-box {
+    width: 350px;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #9a9a9a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-circle {
+    width: 120px;
+    height: 120px;
+    background: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expense-summary {
+    background: white;
+    padding: 20px;
+    width: 180px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Budget Bar */
+.budget-section {
+    margin-top: 40px;
+}
+
+.budget-bar {
+    width: 300px;
+    height: 25px;
+    background-color: #c9faff;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.budget-fill {
+    height: 100%;
+    background-color: #62d9e5;
+    border-radius: 5px;
+}
+
+.footer-tip {
+    background-color: #79c8c1;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
