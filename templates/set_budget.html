@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PayTrack for Students</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>PayTrack for Students</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <a href="/home">Home</a>
+        <a class="active" href="/set-budget">Set Budget</a>
+        <a href="/increase-budget">Increase Budget</a>
+        <a href="/add">Add Expense</a>
+        <a href="/">Dashboard</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Set Monthly Budget</h2>
+        <form method="POST">
+            <label>New Budget Amount:</label><br>
+            <input type="number" name="budget" step="0.01" required>
+            <br><br>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+
+</body>
+</html>
